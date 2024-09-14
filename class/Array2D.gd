@@ -24,7 +24,7 @@ func get_value(coords: Vector2i, loop: bool=false):
 	
 	return self.array[x + y * self.size.x]
 
-func set_value(coords: Vector2i, value, loop: bool=false):
+func set_value(coords: Vector2i, value, loop: bool=false) -> bool:
 	var x = coords.x
 	var y = coords.y
 	
@@ -33,9 +33,11 @@ func set_value(coords: Vector2i, value, loop: bool=false):
 			x = x % self.size.x
 			y = y % self.size.y
 		else:
-			return null
+			return false
 
 	self.array[x + y * self.size.x] = value
+	
+	return true
 
 func is_in_range(coords: Vector2i) -> bool:
 	var x = coords.x

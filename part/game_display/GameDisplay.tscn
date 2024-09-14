@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlfqwm5n7o380"]
+
+[ext_resource type="Script" path="res://part/game_display/GameDisplay.gd" id="1_1oai8"]
+
+[node name="GameDisplay" type="Node2D"]
+script = ExtResource("1_1oai8")
+
+[node name="GameBoardGuide" type="ReferenceRect" parent="."]
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 105.0
+offset_bottom = 135.0
+
+[node name="GameNextBlockGuide" type="ReferenceRect" parent="."]
+offset_left = 115.0
+offset_top = 10.0
+offset_right = 155.0
+offset_bottom = 50.0

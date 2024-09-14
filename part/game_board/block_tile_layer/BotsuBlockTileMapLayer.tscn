@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs5db1p1xnipw"]
+
+[ext_resource type="TileSet" uid="uid://juek7m3s06y" path="res://part/game_board/block_tile_layer/tile_set/BlockTileSet.tres" id="1_8byv0"]
+[ext_resource type="Script" path="res://part/game_board/block_tile_layer/BlockTileMapLayer.gd" id="2_0un0n"]
+
+[node name="BlockTileLayer" type="TileMapLayer"]
+tile_set = ExtResource("1_8byv0")
+script = ExtResource("2_0un0n")
